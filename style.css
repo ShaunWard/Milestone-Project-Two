@@ -8,6 +8,21 @@
     height: 100vh;
 }
 
+.row {
+    height: 100vh;
+}
+
+.card {
+    width: 18rem;
+    max-height: 500px;
+}
+
 .card-body p {
     border: 1px solid black;
+}
+
+div .col-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
