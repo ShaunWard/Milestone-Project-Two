@@ -21,7 +21,22 @@ body {
     align-items: center;
 }
 
+.player p{
+    margin: 0.75em;
+    border: 1px solid black;
+}
+
+.computer p{
+    margin: 0.75em;
+    border: 1px solid black;
+}
+
 .player p:hover {
+    background-color: black;
+    color: white;
+}
+
+.playerSelected {
     background-color: black;
     color: white;
 }
@@ -32,18 +47,18 @@ body {
     flex-direction: column;
 }
 
-.scoreBox {
+#scorePlayer, #scoreComputer {
     color: yellow;
     margin: 20px;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /* Filp box CSS */
 
 .flip-box {
     background-color: transparent;
-    width: 200px;
-    height: 350px;
+    width: 225px;
+    height: 50vh;
     border: 1px solid black;
 }
 
@@ -70,19 +85,25 @@ body {
 }
 
 .flip-box-front {
-    background-color: #bbb;
+    background-image: url("assets/card-back.png");
+    background-size: cover;
     color: black;
 }
 
 .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgb(249, 216, 174);
+    color: black;
     transform: rotateY(180deg);
+}
+
+.flip-box-back img {
+    margin-top: 0.75em;
+    max-width: 225px;
 }
 
 /* Start of game overlay styles */
 
-.gameStart {
+#gameStart {
     display: none;
     position: fixed;
     top: 0;
@@ -95,7 +116,7 @@ body {
     flex-direction: column;
 }
 
-.gameStart.show {
+#gameStart.show {
     display: flex;
 }
 
