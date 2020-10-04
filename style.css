@@ -1,11 +1,13 @@
 .container-fluid {
     background-color: green;
+    height: 100vh;
 }
 
 .container {
     background-color: blue;
+    height: 100vh;
 }
 
-.card {
-    display: inline-block;
+.card-body p {
+    border: 1px solid black;
 }
