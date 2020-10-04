@@ -1,0 +1,11 @@
+.container-fluid {
+    background-color: green;
+}
+
+.container {
+    background-color: blue;
+}
+
+.card {
+    display: inline-block;
+}
