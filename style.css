@@ -21,17 +21,17 @@ body {
     align-items: center;
 }
 
-.player p{
+/* .player button {
     margin: 0.75em;
     border: 1px solid black;
 }
 
-.computer p{
+.computer button {
     margin: 0.75em;
     border: 1px solid black;
-}
+} */
 
-.player p:hover {
+.player button:hover {
     background-color: black;
     color: white;
 }
