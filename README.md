@@ -53,3 +53,5 @@ Game achieves this by:
 - Google was used to find unlicensed images for use on the site
 
 ## Acknowledgements
+
+I'd like to acknowledge my mentor, Felipe Souza Alarcon, for his support throughout this project.
