@@ -9,60 +9,56 @@
 </head>
 <body>
     <main>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
+        <div class="container my-container">
+            <div class="row my-row justify-content-around">
 
-                    <div class="col-6">
-                        <!-- Player Card Column -->
-                        <div id="playerCard" class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                
-                                </div>
-                                <div class="flip-box-back">
-                                    <img id='imagePlayer' src='' width="200px" height="200px" alt="...">
-                                    <div class="player">
-                                        <p id="statOnePlayer"></p>
-                                        <button id="statTwoPlayer"></button>
-                                        <button id="statThreePlayer"></button>
-                                        <button id="statFourPlayer"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="scorePlayer"></div>
-                    </div>
-                    
-                    <!-- Computer Card Column -->
-                    <div class="col-6">
-                        <div id="computerCard" class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                
-                                </div>
-                                <div class="flip-box-back">
-                                    <img id='imageComputer' src="" width="200px" height="200px" alt="...">
-                                    <div class="computer">
-                                        <p id="statOneComputer"></p>
-                                        <button id="statTwoComputer"></button>
-                                        <button id="statThreeComputer"></button>
-                                        <button id="statFourComputer"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="scoreComputer"></div>
-                    </div>
+                <div class="col-6 col-sm-5 col-md-4 my-col align-self-center">
+                                        <!-- Player Card Column -->
+                                        <div id="playerCard" class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <div class="player">
+                                                        <p id="statOnePlayer"></p>
+                                                        <button id="statTwoPlayer"></button>
+                                                        <button id="statThreePlayer"></button>
+                                                        <button id="statFourPlayer"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="scorePlayer"></div>
+                </div>
+                
+                <!-- Computer Card Column -->
+                <div class="col-6 col-sm-5 col-md-4 my-col align-self-center">
+                                        <div id="computerCard" class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <div class="computer">
+                                                        <p id="statOneComputer"></p>
+                                                        <button id="statTwoComputer"></button>
+                                                        <button id="statThreeComputer"></button>
+                                                        <button id="statFourComputer"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="scoreComputer"></div>
+                </div>
 
+            </div>
+            <div id="gameStart" class="show">
+                <div class="gameStartText">
+                    <h2>Welcome to blah blah game</h2>
+                    <p>Game about things and things</p>
                 </div>
-                <div id="gameStart" class="show">
-                    <div class="gameStartText">
-                        <h2>Welcome to blah blah game</h2>
-                        <p>Game about things and things</p>
-                    </div>
-                    <button class="gameStartButton">Start!</button>
-                </div>
+                <button class="gameStartButton">Start!</button>
             </div>
         </div>
     </main>
