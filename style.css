@@ -10,6 +10,7 @@ body {
     background-image: url('assets/basketball_court.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
     border: 6px solid green;
 }
 
@@ -46,54 +47,6 @@ body {
     margin: 20px;
     font-size: 2em;
 }
-
-/* Filp box CSS */
-
-/* .flip-box {
-    background-color: transparent;
-    width: 225px;
-    height: 100%;
-    border: 1px solid black;
-} */
-
-/* .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-box.flip .flip-box-inner {
-    transition: transform 0.8s;
-    transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-box-front {
-    background-image: url("assets/card-back.png");
-    background-size: cover;
-    color: black;
-}
-
-.flip-box-back {
-    background-color: rgb(249, 216, 174);
-    color: black;
-    transform: rotateY(180deg);
-}
-
-.flip-box-back img {
-    margin-top: 0.75em;
-    max-width: 225px;
-} */
 
 /* Start of game overlay styles */
 
