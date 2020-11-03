@@ -10,7 +10,6 @@ let computerCount = 0;
 function startGame(){
     getCardData();
     document.getElementById('gameStart').classList.remove('show');
-    document.getElementById('playerCard').classList.add('flip');
     setScore();
 }
 
@@ -29,29 +28,35 @@ function updateScore(){
 
 function checkComputerStatTwo(){
     document.getElementById('statTwoPlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('computerCard').classList.add('flip');
     document.getElementById('statTwoComputer').classList.add('playerSelectedComputer');
-    compareStat();
+    compareStatTwo();
 }
 
 function checkComputerStatThree(){
     document.getElementById('statThreePlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('computerCard').classList.add('flip');
     document.getElementById('statThreeComputer').classList.add('playerSelectedComputer');
-    compareStat();
+    compareStatThree();
 }
 
 function checkComputerStatFour(){
     document.getElementById('statFourPlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('computerCard').classList.add('flip');
     document.getElementById('statFourComputer').classList.add('playerSelectedComputer');
-    compareStat();
+    compareStatFour();
+}
+
+function removeSelectedClass(){
+    document.getElementById('statTwoPlayer').classList.remove('playerSelectedPlayer');
+    document.getElementById('statTwoComputer').classList.remove('playerSelectedComputer');
+    document.getElementById('statThreePlayer').classList.remove('playerSelectedPlayer');
+    document.getElementById('statThreeComputer').classList.remove('playerSelectedComputer');
+    document.getElementById('statFourPlayer').classList.remove('playerSelectedPlayer');
+    document.getElementById('statFourComputer').classList.remove('playerSelectedComputer');
 }
 
 function getCardData(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=', true);
+    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=ba30341c670243aaa3d899542494a02a', true);
 
     xhr.onload = function(){
         if(this.status == 200){
@@ -86,20 +91,72 @@ function getCardData(){
             document.getElementById('statThreeComputer').innerHTML = `Weight: ${computerWeight} Lbs`;
             document.getElementById('statFourComputer').innerHTML = `Experience: ${computerExperience} Years`;
             document.getElementById('imageComputer').src = `${randomComputer.PhotoUrl}`;
+
+            console.log(playerHeight);
+            console.log(playerWeight);
+            console.log(playerExperience);
         }
         
     }
     xhr.send();
 }
 
-function compareStat(){
-    let valuePlayer = document.getElementsByClassName('playerSelectedPlayer').value;
-    let valueComputer = document.getElementsByClassName('playerSelectedComputer').value;
+function compareStatTwo(){
+    let stringPlayer = document.getElementById('statTwoPlayer').innerHTML;
+    let stringComputer = document.getElementById('statTwoComputer').innerHTML;
 
-    if(valuePlayer > valueComputer){
+    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
+    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+
+    console.log(valuePlayer);
+    console.log(valueComputer);
+
+    if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
         computerCount += 1
     }
     updateScore();
+    removeSelectedClass();
+    getCardData();
+}
+
+function compareStatThree(){
+    let stringPlayer = document.getElementById('statThreePlayer').innerHTML;
+    let stringComputer = document.getElementById('statThreeComputer').innerHTML;
+
+    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
+    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+
+    console.log(valuePlayer);
+    console.log(valueComputer);
+
+    if(valuePlayer >= valueComputer){
+        playerCount += 1
+    } else {
+        computerCount += 1
+    }
+    updateScore();
+    removeSelectedClass();
+    getCardData();
+}
+
+function compareStatFour(){
+    let stringPlayer = document.getElementById('statFourPlayer').innerHTML;
+    let stringComputer = document.getElementById('statFourComputer').innerHTML;
+
+    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
+    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+
+    console.log(valuePlayer);
+    console.log(valueComputer);
+
+    if(valuePlayer >= valueComputer){
+        playerCount += 1
+    } else {
+        computerCount += 1
+    }
+    updateScore();
+    removeSelectedClass();
+    getCardData();
 }
