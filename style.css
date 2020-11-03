@@ -6,12 +6,16 @@ body {
 }
 
 .my-container {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    background-image: url('assets/basketball_court.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     border: 6px solid green;
 }
 
 .my-row {
-    height: 99vh;
+    /* height: 99vh; */
+    height: 33vh;
     border: 6px solid blue;
 }
 
@@ -45,14 +49,14 @@ body {
 
 /* Filp box CSS */
 
-.flip-box {
+/* .flip-box {
     background-color: transparent;
-    /* width: 225px; */
-    height: 50vh;
+    width: 225px;
+    height: 100%;
     border: 1px solid black;
-}
+} */
 
-.flip-box-inner {
+/* .flip-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -89,7 +93,7 @@ body {
 .flip-box-back img {
     margin-top: 0.75em;
     max-width: 225px;
-}
+} */
 
 /* Start of game overlay styles */
 
