@@ -3,21 +3,20 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('assets/basketball_court.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
 }
 
 .my-container {
     /* background-color: lightgrey; */
-    background-image: url('assets/basketball_court.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    border: 6px solid green;
+    /* border: 6px solid green; */
 }
 
 .my-row {
-    /* height: 99vh; */
     height: 99vh;
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
 }
 
 .my-col {
@@ -59,8 +58,13 @@ button {
 
 #scorePlayer, #scoreComputer {
     color: yellow;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     font-size: 2em;
+}
+
+#statOnePlayer, #statOneComputer {
+    font-size: large;
+    font-weight: 500;
 }
 
 /* Start of game overlay styles */
@@ -86,6 +90,7 @@ button {
     text-align: center;
     color: yellow;
     padding-bottom: 50px;
+    max-width: 800px;
 }
 
 .gameStartButton {
