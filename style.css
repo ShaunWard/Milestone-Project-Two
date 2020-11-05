@@ -16,7 +16,7 @@ body {
 
 .my-row {
     /* height: 99vh; */
-    height: 33vh;
+    height: 99vh;
     border: 6px solid blue;
 }
 
@@ -25,11 +25,26 @@ body {
     padding: 20px;
 }
 
+img {
+    height: 130px;
+    width: 100px;
+    border: 1px solid black;
+}
+
 /*  */
+
+button {
+    display: block;
+}
 
 .player button:hover {
     background-color: black;
     color: white;
+}
+
+.computer button.hide{
+    background-color: black;
+    color: black;
 }
 
 .playerSelectedPlayer {
