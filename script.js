@@ -23,34 +23,56 @@ function setScore(){
 function updateScore(){
     document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
-    // If score reaches a level end the game and declare winner
 }
 
 function checkComputerStatTwo(){
+    // let selected2 = document.querySelector('button').classList.contains('playerSelectedPlayer');
+    // console.log(selected2);
+    // if(selected2 = false){
     document.getElementById('statTwoPlayer').classList.add('playerSelectedPlayer');
     document.getElementById('statTwoComputer').classList.add('playerSelectedComputer');
+    document.getElementById('statTwoComputer').classList.remove('hide');
+    document.getElementById('statThreeComputer').classList.remove('hide');
+    document.getElementById('statFourComputer').classList.remove('hide');
     compareStatTwo();
 }
 
 function checkComputerStatThree(){
+    // let selected3 = document.querySelector('button').classList.contains('playerSelectedPlayer');
+    // console.log(selected3);
+    // if(selected3 = false){
     document.getElementById('statThreePlayer').classList.add('playerSelectedPlayer');
     document.getElementById('statThreeComputer').classList.add('playerSelectedComputer');
+    document.getElementById('statTwoComputer').classList.remove('hide');
+    document.getElementById('statThreeComputer').classList.remove('hide');
+    document.getElementById('statFourComputer').classList.remove('hide');
     compareStatThree();
 }
 
 function checkComputerStatFour(){
+    // let selected4 = document.querySelector('button').classList.contains('playerSelectedPlayer');
+    // console.log(selected4);
+    // if(selected4 = false){
     document.getElementById('statFourPlayer').classList.add('playerSelectedPlayer');
     document.getElementById('statFourComputer').classList.add('playerSelectedComputer');
+    document.getElementById('statTwoComputer').classList.remove('hide');
+    document.getElementById('statThreeComputer').classList.remove('hide');
+    document.getElementById('statFourComputer').classList.remove('hide');
     compareStatFour();
 }
 
-function removeSelectedClass(){
+function resetClasses(){
+    // Remove player selection from both cards
     document.getElementById('statTwoPlayer').classList.remove('playerSelectedPlayer');
     document.getElementById('statTwoComputer').classList.remove('playerSelectedComputer');
     document.getElementById('statThreePlayer').classList.remove('playerSelectedPlayer');
     document.getElementById('statThreeComputer').classList.remove('playerSelectedComputer');
     document.getElementById('statFourPlayer').classList.remove('playerSelectedPlayer');
     document.getElementById('statFourComputer').classList.remove('playerSelectedComputer');
+    // Add hide class back to computer card
+    document.getElementById('statTwoComputer').classList.add('hide');
+    document.getElementById('statThreeComputer').classList.add('hide');
+    document.getElementById('statFourComputer').classList.add('hide');
 }
 
 function getCardData(){
@@ -117,8 +139,8 @@ function compareStatTwo(){
         computerCount += 1
     }
     updateScore();
-    removeSelectedClass();
-    getCardData();
+    setTimeout(resetClasses,2000);
+    setTimeout(getCardData,2000);
 }
 
 function compareStatThree(){
@@ -137,8 +159,8 @@ function compareStatThree(){
         computerCount += 1
     }
     updateScore();
-    removeSelectedClass();
-    getCardData();
+    setTimeout(resetClasses,2000);
+    setTimeout(getCardData,2000);
 }
 
 function compareStatFour(){
@@ -157,6 +179,6 @@ function compareStatFour(){
         computerCount += 1
     }
     updateScore();
-    removeSelectedClass();
-    getCardData();
+    setTimeout(resetClasses,2000);
+    setTimeout(getCardData,2000);
 }
