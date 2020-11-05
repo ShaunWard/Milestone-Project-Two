@@ -9,18 +9,19 @@ let computerCount = 0;
 
 function startGame(){
     getCardData();
-    document.getElementById('gameStart').classList.remove('show');
-    setScore();
-}
-
-function setScore(){
     playerCount = 0;
     computerCount = 0;
-    document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
-    document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
+    updateScore();
+    document.getElementById('gameStart').classList.remove('show');
 }
 
 function updateScore(){
+    if (playerCount >= 5) {
+        alert('Player wins!')
+    }
+    if (computerCount >= 5) {
+        alert('Opponent wins!')
+    }
     document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
 }
@@ -78,7 +79,7 @@ function resetClasses(){
 function getCardData(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=ba30341c670243aaa3d899542494a02a', true);
+    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=', true);
 
     xhr.onload = function(){
         if(this.status == 200){
@@ -127,18 +128,18 @@ function compareStatTwo(){
     let stringPlayer = document.getElementById('statTwoPlayer').innerHTML;
     let stringComputer = document.getElementById('statTwoComputer').innerHTML;
 
-    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
-    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+    let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
+    let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    console.log(valuePlayer);
-    console.log(valueComputer);
+    // console.log(valuePlayer);
+    // console.log(valueComputer);
 
     if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
         computerCount += 1
     }
-    updateScore();
+    setTimeout(updateScore,1000);
     setTimeout(resetClasses,2000);
     setTimeout(getCardData,2000);
 }
@@ -147,18 +148,18 @@ function compareStatThree(){
     let stringPlayer = document.getElementById('statThreePlayer').innerHTML;
     let stringComputer = document.getElementById('statThreeComputer').innerHTML;
 
-    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
-    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+    let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
+    let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    console.log(valuePlayer);
-    console.log(valueComputer);
+    // console.log(valuePlayer);
+    // console.log(valueComputer);
 
     if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
         computerCount += 1
     }
-    updateScore();
+    setTimeout(updateScore,1000);
     setTimeout(resetClasses,2000);
     setTimeout(getCardData,2000);
 }
@@ -167,18 +168,18 @@ function compareStatFour(){
     let stringPlayer = document.getElementById('statFourPlayer').innerHTML;
     let stringComputer = document.getElementById('statFourComputer').innerHTML;
 
-    let valuePlayer = stringPlayer.replace(/[^0-9]/g,'');
-    let valueComputer = stringComputer.replace(/[^0-9]/g,'');
+    let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
+    let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    console.log(valuePlayer);
-    console.log(valueComputer);
+    // console.log(typeof(valuePlayer));
+    // console.log(valueComputer);
 
     if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
         computerCount += 1
     }
-    updateScore();
+    setTimeout(updateScore,1000);
     setTimeout(resetClasses,2000);
     setTimeout(getCardData,2000);
 }
