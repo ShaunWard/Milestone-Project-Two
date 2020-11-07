@@ -2,6 +2,7 @@ document.getElementById('gameStart').addEventListener('click', startGame);
 document.getElementById('statTwoPlayer').addEventListener('click', checkComputerStatTwo);
 document.getElementById('statThreePlayer').addEventListener('click', checkComputerStatThree);
 document.getElementById('statFourPlayer').addEventListener('click', checkComputerStatFour);
+document.getElementById('resetGame').addEventListener('click', endGame);
 
 let playerCount = 0;
 let computerCount = 0;
@@ -106,7 +107,7 @@ function getCardData(){
             let playerWeight = `${randomPlayer.Weight}`;
             let playerExperience = `${randomPlayer.Experience}`;
             
-            document.getElementById('statOnePlayer').innerHTML = `Name: ${randomPlayer.DraftKingsName}`;
+            document.getElementById('statOnePlayer').innerHTML = `${randomPlayer.DraftKingsName}`;
             document.getElementById('statTwoPlayer').innerHTML = `Height: ${playerHeight} Inches`;
             document.getElementById('statThreePlayer').innerHTML = `Weight: ${playerWeight} Lbs`;
             document.getElementById('statFourPlayer').innerHTML = `Experience: ${playerExperience} Years`;
@@ -117,7 +118,7 @@ function getCardData(){
             let computerWeight = `${randomComputer.Weight}`;
             let computerExperience = `${randomComputer.Experience}`;
 
-            document.getElementById('statOneComputer').innerHTML = `Name: ${randomComputer.DraftKingsName}`;
+            document.getElementById('statOneComputer').innerHTML = `${randomComputer.DraftKingsName}`;
             document.getElementById('statTwoComputer').innerHTML = `Height: ${computerHeight} Inches`;
             document.getElementById('statThreeComputer').innerHTML = `Weight: ${computerWeight} Lbs`;
             document.getElementById('statFourComputer').innerHTML = `Experience: ${computerExperience} Years`;
