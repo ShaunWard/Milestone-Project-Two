@@ -5,39 +5,30 @@ document.getElementById('statFourPlayer').addEventListener('click', checkCompute
 
 let playerCount = 0;
 let computerCount = 0;
-
+let winner = '';
 
 function startGame(){
     getCardData();
     playerCount = 0;
     computerCount = 0;
+    winner = '';
     updateScore();
     document.getElementById('gameStart').classList.remove('show');
 }
 
-function endGamePlayer(){
+function endGame(){
     document.getElementById('gameEnd').classList.add('show');
-    document.getElementById('gameEndMessage').innerText('Player wins!');
-    document.getElementsByClassName('gameEndButton').addEventListener('click', resetGame);
-}
-
-function endGameComputer(){
-    document.getElementById('gameEnd').classList.add('show');
-    document.getElementById('gameEndMessage').innerText('Opponent wins!');
-    document.getElementsByClassName('gameEndButton').addEventListener('click', resetGame);
-}
-
-function resetGame(){
-    document.getElementById('gameEnd').classList.remove('show');
-    document.getElementById('gameStart').classList.add('show');
+    document.getElementById('gameEndMessage').innerText = `${winner}`;
 }
 
 function updateScore(){
     if (playerCount >= 5) {
-        endGamePlayer();
+        winner = 'Player Wins!'
+        endGame();
     }
     if (computerCount >= 5) {
-        endGameComputer();
+        winner = 'Opponent Wins!'
+        endGame();
     }
     document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
