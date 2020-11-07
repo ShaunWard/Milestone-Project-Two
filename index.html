@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Higher or Lower!</title>
 </head>
 <body>
     <main>
@@ -15,21 +15,26 @@
                 <div class="col-6 col-sm-5 col-md-4 my-col">
                     <div id="playerCard" class="player" align="center">
                         <img id="imagePlayer" src="#" alt="">
+                        <p class="nameP">Name: </p>
                         <p id="statOnePlayer"></p>
-                        <button id="statTwoPlayer"></button>
-                        <button id="statThreePlayer"></button>
-                        <button id="statFourPlayer"></button>
+                        <button id="statTwoPlayer" class="my-button btn btn-light"></button>
+                        <button id="statThreePlayer" class="my-button btn btn-light"></button>
+                        <button id="statFourPlayer" class="my-button btn btn-light"></button>
                     </div>
                     <div id="scorePlayer" align="center"></div>
+                    <div align="center">
+                        <button id="resetGame">End Game</button>
+                    </div>
                 </div>
                 <!-- Computer Card Column -->
                 <div class="col-6 col-sm-5 col-md-4 my-col">
                     <div id="computerCard" class="computer" align="center">
                         <img id="imageComputer" src="#" alt="">
+                        <p class="nameP">Name: </p>
                         <p id="statOneComputer"></p>
-                        <button id="statTwoComputer" class="hide"></button>
-                        <button id="statThreeComputer" class="hide"></button>
-                        <button id="statFourComputer" class="hide"></button>
+                        <button id="statTwoComputer" class="hide my-button btn btn-light"></button>
+                        <button id="statThreeComputer" class="hide my-button btn btn-light"></button>
+                        <button id="statFourComputer" class="hide my-button btn btn-light"></button>
                     </div>
                     <div id="scoreComputer" align="center"></div>
                 </div>
