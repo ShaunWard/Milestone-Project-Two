@@ -49,55 +49,22 @@ button {
     color: white;
 }
 
-#scorePlayer, #scoreComputer {
+#scorePlayer,
+#scoreComputer {
     color: yellow;
     margin: 20px 0px 20px 0px;
     font-size: 2em;
 }
 
-#statOnePlayer, #statOneComputer {
+#statOnePlayer,
+#statOneComputer {
     font-size: large;
     font-weight: 500;
 }
 
-/* Start of game overlay styles */
+/* Start and End of game overlay styles */
 
-#gameStart {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#gameStart.show {
-    display: flex;
-}
-
-.gameStartText {
-    text-align: center;
-    color: yellow;
-    padding-bottom: 50px;
-    max-width: 700px;
-}
-
-.gameStartButton {
-    font-size: 5rem;
-    padding: 0.1em 0.3em 0.1em 0.3em;
-}
-
-.gameStartButton:hover {
-    background-color: black;
-    color: white;
-}
-
-/* End of game overlay styles */
-
+#gameStart,
 #gameEnd {
     display: none;
     position: fixed;
@@ -111,10 +78,12 @@ button {
     flex-direction: column;
 }
 
+#gameStart.show,
 #gameEnd.show {
     display: flex;
 }
 
+.gameStartText,
 .gameEndText {
     text-align: center;
     color: yellow;
@@ -122,11 +91,13 @@ button {
     max-width: 700px;
 }
 
+.gameStartButton,
 .gameEndButton {
     font-size: 5rem;
     padding: 0.1em 0.3em 0.1em 0.3em;
 }
 
+.gameStartButton:hover,
 .gameEndButton:hover {
     background-color: black;
     color: white;
