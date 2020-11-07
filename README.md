@@ -4,6 +4,8 @@
 
 WORK IN PROGRESS
 
+The aim of the game is to pick the statistic on your card that you think will be higher than you opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point!
+
 ## Links
 
 The game has been deployed to X location
