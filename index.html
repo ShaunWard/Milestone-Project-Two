@@ -11,47 +11,44 @@
     <main>
         <div class="container my-container">
             <div class="row my-row justify-content-around align-content-center">
-                <div class="col-6 col-sm-5 col-md-4 my-col align-content-center">
-                                        <!-- Player Card Column -->
-                                        <div id="playerCard" class="player">
-                                                <img id="imagePlayer" src="" alt="">
-                                                <p id="statOnePlayer"></p>
-                                                <button id="statTwoPlayer"></button>
-                                                <button id="statThreePlayer"></button>
-                                                <button id="statFourPlayer"></button>
-                                        </div>
-                                        <div id="scorePlayer"></div>
+                <!-- Player Card Column -->
+                <div class="col-6 col-sm-5 col-md-4 my-col">
+                    <div id="playerCard" class="player" align="center">
+                        <img id="imagePlayer" src="#" alt="">
+                        <p id="statOnePlayer"></p>
+                        <button id="statTwoPlayer"></button>
+                        <button id="statThreePlayer"></button>
+                        <button id="statFourPlayer"></button>
+                    </div>
+                    <div id="scorePlayer" align="center"></div>
                 </div>
-                
                 <!-- Computer Card Column -->
-                <div class="col-6 col-sm-5 col-md-4 my-col align-content-center">
-                                        <div id="computerCard" class="computer">
-                                                <img id="imageComputer" src="" alt="">
-                                                <p id="statOneComputer"></p>
-                                                <button id="statTwoComputer" class="hide"></button>
-                                                <button id="statThreeComputer" class="hide"></button>
-                                                <button id="statFourComputer" class="hide"></button>
-                                        </div>
-                                        <div id="scoreComputer"></div>
+                <div class="col-6 col-sm-5 col-md-4 my-col">
+                    <div id="computerCard" class="computer" align="center">
+                        <img id="imageComputer" src="#" alt="">
+                        <p id="statOneComputer"></p>
+                        <button id="statTwoComputer" class="hide"></button>
+                        <button id="statThreeComputer" class="hide"></button>
+                        <button id="statFourComputer" class="hide"></button>
+                    </div>
+                    <div id="scoreComputer" align="center"></div>
                 </div>
             </div>
             <div id="gameStart" class="show">
                 <div class="gameStartText">
                     <h2>Welcome to Higher or Lower!</h2>
                     <p>The aim of the game is to pick the statistic on your card that you think will be higher than you opponents. 
-                    If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point!
-                    </p>
-                    <p>
-                    The statistics are based on basketball players in the NBA. Enjoy!
-                    </p>
+                    If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point!</p>
+                    <p>The statistics are based on basketball players in the NBA. Enjoy!</p>
                 </div>
                 <button class="gameStartButton">Start!</button>
             </div>
+
             <div id="gameEnd" class="">
                 <div class="gameEndText">
-                    <p id="gameEndMessage"></p>
+                    <h2 id="gameEndMessage"></h2>
                 </div>
-                <button class="gameEndButton">Restart</button>
+                <button class="gameEndButton" onclick="window.location.reload(true)">Restart</button>
             </div>
         </div>
     </main>
