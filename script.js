@@ -15,12 +15,29 @@ function startGame(){
     document.getElementById('gameStart').classList.remove('show');
 }
 
+function endGamePlayer(){
+    document.getElementById('gameEnd').classList.add('show');
+    document.getElementById('gameEndMessage').innerText('Player wins!');
+    document.getElementsByClassName('gameEndButton').addEventListener('click', resetGame);
+}
+
+function endGameComputer(){
+    document.getElementById('gameEnd').classList.add('show');
+    document.getElementById('gameEndMessage').innerText('Opponent wins!');
+    document.getElementsByClassName('gameEndButton').addEventListener('click', resetGame);
+}
+
+function resetGame(){
+    document.getElementById('gameEnd').classList.remove('show');
+    document.getElementById('gameStart').classList.add('show');
+}
+
 function updateScore(){
     if (playerCount >= 5) {
-        alert('Player wins!')
+        endGamePlayer();
     }
     if (computerCount >= 5) {
-        alert('Opponent wins!')
+        endGameComputer();
     }
     document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
@@ -79,7 +96,7 @@ function resetClasses(){
 function getCardData(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=', true);
+    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=ba30341c670243aaa3d899542494a02a', true);
 
     xhr.onload = function(){
         if(this.status == 200){
