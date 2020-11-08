@@ -16,7 +16,13 @@ At the end of the game the game end screen is presented, it will state who won t
 
 ## Links
 
-The game has been deployed to X location
+### Deployment
+
+The game has been deployed to [github pages](https://shaunward.github.io/Milestone-Project-Two/)
+
+### Wireframes
+
+- 
 
 ## UX
 
