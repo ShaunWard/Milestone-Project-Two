@@ -6,7 +6,7 @@ WORK IN PROGRESS
 
 Higher or Lower is a card game based on a popular physical card game by a different name.
 
-The aim of the game is to pick the statistic on your card that you think will be higher than you opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point!
+The aim of the game is to pick the statistic on your card that you think will be higher than you opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point! The first score to 5 wins!
 
 The website consists of a start of game overlay which introduces the player to the game by explaining the rules, and also providing a start button when the player is ready to play.
 
@@ -48,10 +48,12 @@ Game achieves this by:
 
 ## Features
 
-- Clickable buttons used to select a stat
+- Clickable buttons used to select a stat.
+- End game button, used to end the game before either score reaches 5.
 - Responsive for all screen sizes
 
-![]()
+![Responsive start](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/responsive_start.png?raw=true)
+![Responsive in game](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/responsive_in_game.png?raw=true)
 
 ## Testing
 
