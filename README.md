@@ -18,7 +18,7 @@ At the end of the game the game end screen is presented, it will state who won t
 
 ### Deployment
 
-The game has been deployed to [github pages](https://shaunward.github.io/Milestone-Project-Two/)
+The game has been deployed using github pages, and is available to view [here](https://shaunward.github.io/Milestone-Project-Two/)
 
 ### Wireframes
 
@@ -35,7 +35,7 @@ The start screen was made to explain the game in a simple way to the player, and
 
 ![In game screen](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/In_game.png?raw=true)
 
-The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurly. The card on the right is the opponents card, this has the same basic layout but the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
+The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurly. The card on the right is the opponents card, this has the same basic layout without the end game button, and the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
 
 ## User Stories
 
@@ -49,7 +49,9 @@ Game achieves this by:
 ## Features
 
 - Clickable buttons used to select a stat
-- 
+- Responsive for all screen sizes
+
+![]()
 
 ## Testing
 
