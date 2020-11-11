@@ -1,4 +1,4 @@
-# Milestone-Project-Two
+# Milestone-Project-Two - Higher or Lower!
 
 ## Description
 
@@ -45,6 +45,9 @@ The in game screen shows the payer two cards on top of a background. The card on
 
 Game achieves this by:
 
+- Provides information on NBA stars such as weight, height and years in the league to learn about the players.
+- The game gets random NBA players from the API, there is over 500 players to learn about.
+- The headshot and name of the opponents player is provided so if you know that players stats you will know how to beat them.
 
 ## Features
 
