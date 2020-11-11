@@ -29,6 +29,14 @@ The game has been deployed to [github pages](https://shaunward.github.io/Milesto
 
 ## UX
 
+![Start screen image](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/Start-screen.png?raw=true)
+
+The start screen was made to explain the game in a simple way to the player, and then simply offer a start button so they can begin the game. After this the start screen disappears and the cards are loaded onto the game screen, ready for the player to start.
+
+![In game screen](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/In_game.png?raw=true)
+
+The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurly. The card on the right is the opponents card, this has the same basic layout but the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
+
 ## User Stories
 
 - As a player, I want to play a game that teaches me about a sport I like.
