@@ -31,17 +31,17 @@ The game has been deployed to [github pages](https://shaunward.github.io/Milesto
 
 ## User Stories
 
-Potential Customer
+- As a player, I want to play a game that teaches me about a sport I like.
+- As a player, I want to use my knowledge of my favourite sport to be better at a game.
 
-As a user, I want to
-As a user, I want to
-As a user, I want to
-As a user, I want to
 
 Game achieves this by:
 
 
 ## Features
+
+- Clickable buttons used to select a stat
+- 
 
 ## Testing
 
@@ -49,6 +49,8 @@ Game achieves this by:
 
 I originally wanted to use flip boxes for the game, the opponents card flipping over to be reviled to the player would have looked great. When I tried to impliment this the flipboxes would work perfectly on the desktop screen, but as soon as I tested the site on a mobile it was clear that they needed some work.
 The problem was that because I was getting to code for the flipbox from W3schools, they had given the boxes a height property to ensure the front and the back of the card were the same height. I could use this property to make sure that the box was big enough to fit all of my info, but then the boxes wouldn't scale with the bootstrap columns that I have used for the layout of the website.
+
+During the testing while coding the game, I found that if the player was quick enough they could select more than one option on the card in s single turn. This would result in the score changing faster than 1 point per round. After trying this several times I found that this was something that was possible on ocassions where the cards did not load quite as quickly as normal. So the chances of a player doing was was small enough that I didn't code this out of the game, this was down to not finding a straight forward solution, quick or simple solution.
 
 ## Scalability
 
