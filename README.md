@@ -35,7 +35,7 @@ The start screen was made to explain the game in a simple way to the player, and
 
 ![In game screen](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/In_game.png?raw=true)
 
-The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurly. The card on the right is the opponents card, this has the same basic layout without the end game button, and the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
+The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurely. The card on the right is the opponents card, this has the same basic layout without the end game button, and the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
 
 ## User Stories
 
@@ -64,10 +64,10 @@ Game achieves this by:
 
 ## Issues and Bugs
 
-I originally wanted to use flip boxes for the game, the opponents card flipping over to be reviled to the player would have looked great. When I tried to impliment this the flipboxes would work perfectly on the desktop screen, but as soon as I tested the site on a mobile it was clear that they needed some work.
+I originally wanted to use flip boxes for the game, the opponents card flipping over to be reviled to the player would have looked great. When I tried to implement this the flipboxes would work perfectly on the desktop screen, but as soon as I tested the site on a mobile it was clear that they needed some work.
 The problem was that because I was getting to code for the flipbox from W3schools, they had given the boxes a height property to ensure the front and the back of the card were the same height. I could use this property to make sure that the box was big enough to fit all of my info, but then the boxes wouldn't scale with the bootstrap columns that I have used for the layout of the website.
 
-During the testing while coding the game, I found that if the player was quick enough they could select more than one option on the card in s single turn. This would result in the score changing faster than 1 point per round. After trying this several times I found that this was something that was possible on ocassions where the cards did not load quite as quickly as normal. So the chances of a player doing was was small enough that I didn't code this out of the game, this was down to not finding a straight forward solution, quick or simple solution.
+During the testing while coding the game, I found that if the player was quick enough they could select more than one option on the card in s single turn. This would result in the score changing faster than 1 point per round. After trying this several times I found that this was something that was possible on occasions where the cards did not load quite as quickly as normal. So the chances of a player doing was was small enough that I didn't code this out of the game, this was down to not finding a straight forward solution, quick or simple solution.
 
 ## Scalability
 
@@ -89,15 +89,11 @@ Another change I would make to make the game run more smoothly would be to get t
 
 ### Tools Used
 
-- Am I Responsive for testing as above
-- wireframes.cc: was used to create wireframes
-- fontawesome: icons were used for social media links
-- Google Maps: embedded into homepage to provide location.
-- Google Fonts
-- Gitpod: used to create the website.
-- JPEG mini: was used to compress images
-- Pingdom used to test speed of website
-- Google was used to find unlicensed images for use on the site
+- [sportsdata](https://sportsdata.io/) is the API used to pull NBA players into the game.
+- [Am I Responsive](http://ami.responsivedesign.is/) for testing the responsiveness of the website.
+- [balsamiq](https://balsamiq.com/) was used to create wireframes
+- [Visual Studio Code](https://code.visualstudio.com/) was used to create the website.
+- Google was used to find unlicensed images for use on the site.
 
 ## Acknowledgements
 
