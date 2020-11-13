@@ -42,6 +42,7 @@ The in game screen shows the payer two cards on top of a background. The card on
 - As a player, I want to play a game that teaches me about a sport I like.
 - As a player, I want to use my knowledge of my favourite sport to be better at a game.
 - As a player, I want to play a game that has variety and doesn't use the same cards too often.
+- As a player, I want a game that I can play without knowing the subject matter.
 
 
 Game achieves this by:
@@ -50,6 +51,7 @@ Game achieves this by:
 - The game gets random NBA players from the API, there is 510 players to learn about.
 - The headshot and name of the opponents player is provided so if you know that players stats you will know how to beat them.
 - There is a pool of 510 NBA players that can randomly be pulled into the game, so the same players shouldn't turn up often, and the same match ups less often.
+- It is easy to play the game with no knowledge of basketball or the NBA. Once a player has played the game a few times they will start to gather what numbers tend to be on the higher end for that particular stat.
 
 ## Features
 
