@@ -1,12 +1,14 @@
 document.getElementById('gameStart').addEventListener('click', startGame);
+
 document.getElementById('statTwoPlayer').addEventListener('click', checkComputerStatTwo);
 document.getElementById('statThreePlayer').addEventListener('click', checkComputerStatThree);
 document.getElementById('statFourPlayer').addEventListener('click', checkComputerStatFour);
+
 document.getElementById('resetGame').addEventListener('click', endGame);
 
-let playerCount = 0;
-let computerCount = 0;
-let winner = '';
+var playerCount = 0;
+var computerCount = 0;
+var winner = '';
 
 function startGame(){
     getCardData();
@@ -35,12 +37,18 @@ function updateScore(){
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
 }
 
+// function checkComputerStat(statNumber){
+//     document.getElementById('stat'+statNumber+'Player').classList.add('playerSelectedPlayer');
+//     document.getElementById('stat'+statNumber+'Computer').classList.add('playerSelectedComputer');
+//     document.getElementById('statTwoComputer').classList.remove('hide');
+//     document.getElementById('statThreeComputer').classList.remove('hide');
+//     document.getElementById('statFourComputer').classList.remove('hide');
+//     compareStatTwo();
+// }
+
 function checkComputerStatTwo(){
-    // let selected2 = document.querySelector('button').classList.contains('playerSelectedPlayer');
-    // console.log(selected2);
-    // if(selected2 = false){
-    document.getElementById('statTwoPlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('statTwoComputer').classList.add('playerSelectedComputer');
+    document.getElementById('stat'+'Two'+'Player').classList.add('playerSelectedPlayer');
+    document.getElementById('stat'+'Two'+'Computer').classList.add('playerSelectedComputer');
     document.getElementById('statTwoComputer').classList.remove('hide');
     document.getElementById('statThreeComputer').classList.remove('hide');
     document.getElementById('statFourComputer').classList.remove('hide');
@@ -48,9 +56,6 @@ function checkComputerStatTwo(){
 }
 
 function checkComputerStatThree(){
-    // let selected3 = document.querySelector('button').classList.contains('playerSelectedPlayer');
-    // console.log(selected3);
-    // if(selected3 = false){
     document.getElementById('statThreePlayer').classList.add('playerSelectedPlayer');
     document.getElementById('statThreeComputer').classList.add('playerSelectedComputer');
     document.getElementById('statTwoComputer').classList.remove('hide');
@@ -60,9 +65,6 @@ function checkComputerStatThree(){
 }
 
 function checkComputerStatFour(){
-    // let selected4 = document.querySelector('button').classList.contains('playerSelectedPlayer');
-    // console.log(selected4);
-    // if(selected4 = false){
     document.getElementById('statFourPlayer').classList.add('playerSelectedPlayer');
     document.getElementById('statFourComputer').classList.add('playerSelectedComputer');
     document.getElementById('statTwoComputer').classList.remove('hide');
@@ -140,9 +142,6 @@ function compareStatTwo(){
     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    // console.log(valuePlayer);
-    // console.log(valueComputer);
-
     if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
@@ -160,9 +159,6 @@ function compareStatThree(){
     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    // console.log(valuePlayer);
-    // console.log(valueComputer);
-
     if(valuePlayer >= valueComputer){
         playerCount += 1
     } else {
@@ -179,9 +175,6 @@ function compareStatFour(){
 
     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
-
-    // console.log(typeof(valuePlayer));
-    // console.log(valueComputer);
 
     if(valuePlayer >= valueComputer){
         playerCount += 1
