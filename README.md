@@ -68,8 +68,8 @@ Game achieves this by:
 ## Testing
 
 - [Am I Responsive](http://ami.responsivedesign.is/) was used to test the site on various screen sizes to ensure the information could be viewed correctly
-- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return some errors, however these errors were used purposefully to make the site work correctly.
-- [CSS Validator](https://jigsaw.w3.org/css-validator/) used to validate CSS
+- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return some errors, however these errors were used purposefully to make the site work correctly, such as the align attribute being used on some of the divs.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS and the errors that came back were either purposefully used, or they were items used by bootstrap.
 - [Pingdom](https://tools.pingdom.com/#5ca554057c800000) used to test speed of website and improve loading times. The site came back with a grade of A 93, which is acceptable.
 
 ## Issues and Bugs
