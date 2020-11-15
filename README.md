@@ -6,13 +6,13 @@ WORK IN PROGRESS
 
 Higher or Lower is a card game based on a popular physical card game by a different name.
 
-The aim of the game is to pick the statistic on your card that you think will be higher than you opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point! The first score to 5 wins!
+The aim of the game is to pick the statistic on your card that you think will be higher than your opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point! The first score to 5 wins!
 
 The website consists of a start of game overlay which introduces the player to the game by explaining the rules, and also providing a start button when the player is ready to play.
 
 At the start of the game information is presented onto two cards, both cards with a picture and name of an NBA player. On the players card there are 3 stats, on the opponents card these space are blank. Below this on both cards is the relevant cards score. The only on the player card is a button to end the game without it coming to an end due to score.
 
-At the end of the game the game end screen is presented, it will state who won the gave and present a restart button to the player.
+At the end of the game the game end screen is presented, it will state who won the game and present a restart button to the player.
 
 ## Links
 
