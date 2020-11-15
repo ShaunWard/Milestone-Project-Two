@@ -67,6 +67,11 @@ Game achieves this by:
 
 ## Testing
 
+- [Am I Responsive](http://ami.responsivedesign.is/) was used to test the site on various screen sizes to ensure the information could be viewed correctly
+- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return some errors, however these errors were used purposefully to make the site work correctly.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) used to validate CSS
+- [Pingdom](https://tools.pingdom.com/#5ca554057c800000) used to test speed of website and improve loading times. The site came back with a grade of A 93, which is acceptable.
+
 ## Issues and Bugs
 
 I originally wanted to use flip boxes for the game, the opponents card flipping over to be reviled to the player would have looked great. When I tried to implement this the flipboxes would work perfectly on the desktop screen, but as soon as I tested the site on a mobile it was clear that they needed some work.
