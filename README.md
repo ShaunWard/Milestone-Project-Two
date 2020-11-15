@@ -80,6 +80,9 @@ One of the things I would add in future would be to allow the player to change t
 
 Another change I would make to make the game run more smoothly would be to get the data and save it locally using local storage. This way when the game is getting a random NBA player to display on the cards it can quickly get it from local storage rather than an XML request every turn.
 
+A timer could be added to the game to keep track of how long the player has taken to beat the computer to 5 points. This could then be used as a mechanism for the player to try and beat themselves next time by beating the computer either by a bigger points margin or a lower time.
+In addition to this a score page or modal could be added where scores are recorded on a high score page. This would be able to take advantage of recording the time taken the win the game and the score when the game was won, this would enable the player to look at the modal and try to beat their own record.
+
 ## Technologies
 
 ### Languages
