@@ -1,8 +1,8 @@
 document.getElementById('gameStart').addEventListener('click', startGame);
 
-document.getElementById('statTwoPlayer').addEventListener('click', checkComputerStatTwo);
-document.getElementById('statThreePlayer').addEventListener('click', checkComputerStatThree);
-document.getElementById('statFourPlayer').addEventListener('click', checkComputerStatFour);
+document.getElementById('statTwoPlayer').addEventListener('click', checkComputerStat.bind(null, 'Two'));
+document.getElementById('statThreePlayer').addEventListener('click', checkComputerStat.bind(null, 'Three'));
+document.getElementById('statFourPlayer').addEventListener('click', checkComputerStat.bind(null, 'Four'));
 
 document.getElementById('resetGame').addEventListener('click', endGame);
 
@@ -37,41 +37,41 @@ function updateScore(){
     document.getElementById('scoreComputer').innerHTML = 'Score: '+computerCount;
 }
 
-// function checkComputerStat(statNumber){
-//     document.getElementById('stat'+statNumber+'Player').classList.add('playerSelectedPlayer');
-//     document.getElementById('stat'+statNumber+'Computer').classList.add('playerSelectedComputer');
+function checkComputerStat(statNumber){
+    document.getElementById('stat'+statNumber+'Player').classList.add('playerSelectedPlayer');
+    document.getElementById('stat'+statNumber+'Computer').classList.add('playerSelectedComputer');
+    document.getElementById('statTwoComputer').classList.remove('hide');
+    document.getElementById('statThreeComputer').classList.remove('hide');
+    document.getElementById('statFourComputer').classList.remove('hide');
+    compareStat(statNumber);
+}
+
+// function checkComputerStatTwo(){
+//     document.getElementById('stat'+'Two'+'Player').classList.add('playerSelectedPlayer');
+//     document.getElementById('stat'+'Two'+'Computer').classList.add('playerSelectedComputer');
 //     document.getElementById('statTwoComputer').classList.remove('hide');
 //     document.getElementById('statThreeComputer').classList.remove('hide');
 //     document.getElementById('statFourComputer').classList.remove('hide');
 //     compareStatTwo();
 // }
 
-function checkComputerStatTwo(){
-    document.getElementById('stat'+'Two'+'Player').classList.add('playerSelectedPlayer');
-    document.getElementById('stat'+'Two'+'Computer').classList.add('playerSelectedComputer');
-    document.getElementById('statTwoComputer').classList.remove('hide');
-    document.getElementById('statThreeComputer').classList.remove('hide');
-    document.getElementById('statFourComputer').classList.remove('hide');
-    compareStatTwo();
-}
+// function checkComputerStatThree(){
+//     document.getElementById('statThreePlayer').classList.add('playerSelectedPlayer');
+//     document.getElementById('statThreeComputer').classList.add('playerSelectedComputer');
+//     document.getElementById('statTwoComputer').classList.remove('hide');
+//     document.getElementById('statThreeComputer').classList.remove('hide');
+//     document.getElementById('statFourComputer').classList.remove('hide');
+//     compareStatThree();
+// }
 
-function checkComputerStatThree(){
-    document.getElementById('statThreePlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('statThreeComputer').classList.add('playerSelectedComputer');
-    document.getElementById('statTwoComputer').classList.remove('hide');
-    document.getElementById('statThreeComputer').classList.remove('hide');
-    document.getElementById('statFourComputer').classList.remove('hide');
-    compareStatThree();
-}
-
-function checkComputerStatFour(){
-    document.getElementById('statFourPlayer').classList.add('playerSelectedPlayer');
-    document.getElementById('statFourComputer').classList.add('playerSelectedComputer');
-    document.getElementById('statTwoComputer').classList.remove('hide');
-    document.getElementById('statThreeComputer').classList.remove('hide');
-    document.getElementById('statFourComputer').classList.remove('hide');
-    compareStatFour();
-}
+// function checkComputerStatFour(){
+//     document.getElementById('statFourPlayer').classList.add('playerSelectedPlayer');
+//     document.getElementById('statFourComputer').classList.add('playerSelectedComputer');
+//     document.getElementById('statTwoComputer').classList.remove('hide');
+//     document.getElementById('statThreeComputer').classList.remove('hide');
+//     document.getElementById('statFourComputer').classList.remove('hide');
+//     compareStatFour();
+// }
 
 function resetClasses(){
     // Remove player selection from both cards
@@ -135,9 +135,9 @@ function getCardData(){
     xhr.send();
 }
 
-function compareStatTwo(){
-    let stringPlayer = document.getElementById('statTwoPlayer').innerHTML;
-    let stringComputer = document.getElementById('statTwoComputer').innerHTML;
+function compareStat(statNumber){
+    let stringPlayer = document.getElementById('stat'+statNumber+'Player').innerHTML;
+    let stringComputer = document.getElementById('stat'+statNumber+'Computer').innerHTML;
 
     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
@@ -152,36 +152,36 @@ function compareStatTwo(){
     setTimeout(getCardData,2000);
 }
 
-function compareStatThree(){
-    let stringPlayer = document.getElementById('statThreePlayer').innerHTML;
-    let stringComputer = document.getElementById('statThreeComputer').innerHTML;
+// function compareStatThree(){
+//     let stringPlayer = document.getElementById('statThreePlayer').innerHTML;
+//     let stringComputer = document.getElementById('statThreeComputer').innerHTML;
 
-    let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
-    let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
+//     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
+//     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    if(valuePlayer >= valueComputer){
-        playerCount += 1
-    } else {
-        computerCount += 1
-    }
-    setTimeout(updateScore,1000);
-    setTimeout(resetClasses,2000);
-    setTimeout(getCardData,2000);
-}
+//     if(valuePlayer >= valueComputer){
+//         playerCount += 1
+//     } else {
+//         computerCount += 1
+//     }
+//     setTimeout(updateScore,1000);
+//     setTimeout(resetClasses,2000);
+//     setTimeout(getCardData,2000);
+// }
 
-function compareStatFour(){
-    let stringPlayer = document.getElementById('statFourPlayer').innerHTML;
-    let stringComputer = document.getElementById('statFourComputer').innerHTML;
+// function compareStatFour(){
+//     let stringPlayer = document.getElementById('statFourPlayer').innerHTML;
+//     let stringComputer = document.getElementById('statFourComputer').innerHTML;
 
-    let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
-    let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
+//     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
+//     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
-    if(valuePlayer >= valueComputer){
-        playerCount += 1
-    } else {
-        computerCount += 1
-    }
-    setTimeout(updateScore,1000);
-    setTimeout(resetClasses,2000);
-    setTimeout(getCardData,2000);
-}
+//     if(valuePlayer >= valueComputer){
+//         playerCount += 1
+//     } else {
+//         computerCount += 1
+//     }
+//     setTimeout(updateScore,1000);
+//     setTimeout(resetClasses,2000);
+//     setTimeout(getCardData,2000);
+// }
