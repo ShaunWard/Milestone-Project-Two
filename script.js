@@ -1,4 +1,4 @@
-document.getElementById('gameStart').addEventListener('click', startGame);
+document.getElementById('gameStartButton').addEventListener('click', startGame);
 
 document.getElementById('statTwoPlayer').addEventListener('click', checkComputerStat.bind(null, 'Two'));
 document.getElementById('statThreePlayer').addEventListener('click', checkComputerStat.bind(null, 'Three'));
