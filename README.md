@@ -89,7 +89,30 @@ Manual testing has been centered around playing the game but also trying to pred
     - Player was able to start game by clicking elsewhere on the screen instead of the start button.
     - Code was changed to ensure only the start button had the ability to remove the overlay and start the game.
 
-2. 
+2. Once the game had begun tried to click on anything apart from the player card stats or end game button.
+    - Clicked on opponent player stats - No response from game.
+    - Clicked on opponent and player cards NBA player headshot and name - No response from game.
+    - Tried to move any boxes or buttons - No response from game.
+
+3. Made sure the buttons that were meant to be used all worked correctly.
+    - Pressed end game button - game ends and overlay appears with restart button.
+    - Continued to end game button randomly during turns - game ends and overlay appears with restart button.
+    - Clicked on each stat button in turn - game goes to next turn and calculates score correctly.
+    - Clicked on all the stats very quickly - This work as it should, ie the game calculated the score based on the stats in the boxes at the time, however it is possible to pick more than one of the same NBA players stats and both of these will be added to the score. Discussed in bugs section.
+
+4. Tested score board by slowing the reload times of the cards down.
+    - Clicked on a higher value on players card - one point to the player.
+    - Clicked on a lower value on the players card - one point to the opponent.
+    - Clicked on a value that was equal to the opponents cards - one point to the player.
+
+5. Tested game end screen based on result
+    - Played game until player reached game winning score of 5 points first - end screen displays player wins with restart button.
+    - Played the game until the opponents score reached 5 points - end screen displays opponent wins with restart button.
+
+6. Made sure restart button worked correctly
+    - Tried clicking on game end screen anywhere but restart button - No response from game
+    - Tried clicking on the restart button - end screen disappears and start screen is now shown.
+
 
 ## Issues and Bugs
 
