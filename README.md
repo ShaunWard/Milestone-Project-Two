@@ -6,13 +6,13 @@ WORK IN PROGRESS
 
 Higher or Lower is a card game based on a popular physical card game by a different name.
 
-The aim of the game is to pick the statistic on your card that you think will be higher than your opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point! The first score to 5 wins!
+The aim of the game is to pick the statistic on your card that you think will be higher than your opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point. The first player to score 5 points wins.
 
-The website consists of a start of game overlay which introduces the player to the game by explaining the rules, and also providing a start button when the player is ready to play.
+The website consists of a start of game overlay which introduces the player to the game by explaining the rules, and also provides a start button when the player is ready to play.
 
-At the start of the game information is presented onto two cards, both cards with a picture and name of an NBA player. On the players card there are 3 stats, on the opponents card these space are blank. Below this on both cards is the relevant cards score. The only on the player card is a button to end the game without it coming to an end due to score.
+When you begin the game information is presented onto two cards, both cards with a picture and the name of an NBA player. On the players card there are 3 stats, on the opponents card these space are blank. Below this on both cards is the relevant cards score. On the players card only is a button to end the game without it coming to an end due to score.
 
-At the end of the game the game end screen is presented, it will state who won the game and present a restart button to the player.
+At the end of the game the game end screen is presented, it will state who won the game and present a restart button to the player should they wish to play again.
 
 ## Links
 
@@ -29,13 +29,13 @@ The game has been deployed using github pages, and is available to view [here](h
 
 ## UX
 
+The first screen presented to the player is the start of game screen shown below. This is a simple overlay used to present the instructions of the game to the player and give them a start button used to begin the game. The overlay is a dark background with the game board behind it, the instuctions are shown in yellow text to make them pop off the dark background. The start button is large to invite the player to play and darkens when you hover over it. After the start button is clicked, the start screen disappears to reveal the gameboard with a basketball court background, inkeeping with the theme, and two cards of NBA players.
+
 ![Start screen image](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/Start-screen.png?raw=true)
 
-The start screen was made to explain the game in a simple way to the player, and then simply offer a start button so they can begin the game. After this the start screen disappears and the cards are loaded onto the game screen, ready for the player to start.
+The in game screen, shown below, shows the player two cards on top of the background. The players card on the left shows the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurely. The card on the right is the opponents card, this has the same basic layout without the end game button. The 3 stats on the opponents card are covered so the player cannot see them and these will be revealed to the player when they make a stat selection on their own card. The NBA stars image and name are shown on the opponents card to help the player determine the best stat to choose to beat the opponent.
 
 ![In game screen](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/In_game.png?raw=true)
-
-The in game screen shows the payer two cards on top of a background. The card on the left offers the player the name of the NBA star they have drawn, 3 stats about the star to choose from, the current score of the player and an end game button should the player want to finish the game prematurely. The card on the right is the opponents card, this has the same basic layout without the end game button, and the 3 stats are covered so the player cannot see them, however the NBA star image and name are shown to help the player determine the best stat to choose to beat the opponent.
 
 ## User Stories
 
@@ -49,12 +49,12 @@ The in game screen shows the payer two cards on top of a background. The card on
 
 Game achieves this by:
 
-- Providing information on NBA stars such as weight, height and years in the league to learn about the players. The game gets random NBA players from the API, there are 510 players to learn about.
-- The headshot and name of the opponents player is provided so if you know that players stats you will know how to beat them.
+- Higher or Lower provides information on NBA stars such as weight, height and number of years in the NBA league for the player to learn about. The game gets two random NBA players from the API of which there are 510 players to learn about.
+- The headshot and name of the opponents player are provided, so if you know that players stats you will know how to beat them.
 - There is a pool of 510 NBA players that can randomly be pulled into the game, so the same players shouldn't turn up often, and the same match ups less often.
 - It is easy to play the game with no knowledge of basketball or the NBA. Once a player has played the game a few times they will start to gather what numbers tend to be on the higher end for that particular stat.
 - The game is responsive and can be played on any screen size including on your desktop computer screen or mobile phone.
-- The game has an End game button provided 
+- The game provides an on screen End game button should the player be unable to finish the game.
 
 ## Features
 
