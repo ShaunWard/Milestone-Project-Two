@@ -8,7 +8,7 @@ The aim of the game is to pick the statistic on your card that you think will be
 
 The website consists of a start of game overlay which introduces the player to the game by explaining the rules, and also provides a start button when the player is ready to play.
 
-When you begin the game information is presented onto two cards, both cards with a picture and the name of an NBA player. On the players card there are 3 stats, on the opponents card these space are blank. Below this on both cards is the relevant cards score. On the players card only is a button to end the game without it coming to an end due to score.
+When you begin the game information is presented onto two cards, both cards with a picture and the name of an NBA player. On the players card there are 3 stats, on the opponents card these spaces are blank. Below this on both cards is the relevant cards score. On the players card only is a button to end the game without it coming to an end due to score.
 
 At the end of the game the game end screen is presented, it will state who won the game and present a restart button to the player should they wish to play again.
 
@@ -27,7 +27,7 @@ The game has been deployed using github pages, and is available to view [here](h
 
 ## User Design/Experience
 
-The first screen presented to the player is the start of game screen shown below. This is a simple overlay used to present the instructions of the game to the player and give them a start button used to begin the game. The overlay is a dark background with the game board behind it, the instuctions are shown in yellow text to make them pop off the dark background. The start button is large to invite the player to play and darkens when you hover over it. After the start button is clicked, the start screen disappears to reveal the gameboard with a basketball court background, inkeeping with the theme, and two cards of NBA players.
+The first screen presented to the player is the start of game screen shown below. This is a simple overlay used to present the instructions of the game to the player and give them a start button used to begin the game. The overlay is a dark background with the game board behind it, the instructions are shown in yellow text to make them pop off the dark background. The start button is large to invite the player to play and darkens when you hover over it. After the start button is clicked, the start screen disappears to reveal the gameboard with a basketball court background, in keeping with the theme, and two cards of NBA players.
 
 ![Start screen image](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/Start-screen.png?raw=true)
 
@@ -86,17 +86,17 @@ Google Dev tools were used for debugging code at all stages of the building of t
 Manual testing has been centered around playing the game but also trying to predict what a player might do.
 
 1. Tried clicking anywhere on the start screen overlay apart from the start button.
-    - Player was able to start game by clicking elsewhere on the screen instead of the start button.
+    - Player was able to start the game by clicking elsewhere on the screen instead of the start button.
     - Code was changed to ensure only the start button had the ability to remove the overlay and start the game.
 
-2. Once the game had begun tried to click on anything apart from the player card stats or end game button.
+2. Once the game had begun I tried to click on anything apart from the player card stats or end game button.
     - Clicked on opponent player stats - No response from game.
     - Clicked on opponent and player cards NBA player headshot and name - No response from game.
     - Tried to move any boxes or buttons - No response from game.
 
 3. Made sure the buttons that were meant to be used all worked correctly.
     - Pressed end game button - game ends and overlay appears with restart button.
-    - Continued to end game button randomly during turns - game ends and overlay appears with restart button.
+    - Continued to press end game button randomly during turns - game ends and overlay appears with restart button.
     - Clicked on each stat button in turn - game goes to next turn and calculates score correctly.
     - Clicked on all the stats very quickly - This work as it should, ie the game calculated the score based on the stats in the boxes at the time, however it is possible to pick more than one of the same NBA players stats and both of these will be added to the score. Discussed in bugs section.
 
@@ -123,7 +123,7 @@ During the testing while coding the game, I found that if the player was quick e
 
 ## Scalability
 
-One of the things I would add in future would be to allow the player to change the winning score before the game begins. This could be achieved by having an input box that would take a valve from the player and set it in the code as the winning score. This could also be done with radio button to give the player a selection of scores for short, medium and longer games, and this would avoid very large numbers being inputted.
+One of the things I would add in future would be to allow the player to change the winning score before the game begins. This could be achieved by having an input box that would take a valve from the player and set it in the code as the winning score. This could also be done with radio buttons to give the player a selection of scores for short, medium and longer games, and this would avoid very large numbers being inputted.
 
 Another change I would make to the game to make the game run more smoothly would be to get all the data and save it locally using local storage. This way when the game is getting a random NBA player to display on the cards it can quickly get it from local storage rather than an XML request every turn.
 
