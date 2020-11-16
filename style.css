@@ -17,7 +17,7 @@ body {
     padding: 10px 0px 10px 0px;
 }
 
-img {
+.my-img {
     height: 130px;
     width: 100px;
     border: 1px solid black;
