@@ -27,7 +27,7 @@ The game has been deployed using github pages, and is available to view [here](h
 - Opponent card reveal [wireframe](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/Game%20-%20computer%20reveal.png?raw=true)
 - Next turn [wireframe](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/Next%20turn.png?raw=true)
 
-## UX
+## User Design/Experience
 
 The first screen presented to the player is the start of game screen shown below. This is a simple overlay used to present the instructions of the game to the player and give them a start button used to begin the game. The overlay is a dark background with the game board behind it, the instuctions are shown in yellow text to make them pop off the dark background. The start button is large to invite the player to play and darkens when you hover over it. After the start button is clicked, the start screen disappears to reveal the gameboard with a basketball court background, inkeeping with the theme, and two cards of NBA players.
 
@@ -58,35 +58,52 @@ Game achieves this by:
 
 ## Features
 
-- Clickable buttons used to select a stat.
-- End game button, used to end the game before either score reaches 5.
-- Responsive for all screen sizes
+This game features:
 
+- All of the current 510 NBA players in the NBA league with their height, weight and years playing.
+- API calls that randomly bring players into the game to increase variety of game play and therefore player retention.
+- Scoring that favours the player by awarding a point if the stat chosen is greater or equal to that of the opponents stat.
+- A responsive design for the ability to play on any screen. Stats in the form of buttons to make the selection of a stat easy on any screen.
+- An end game button, used to end the game before a score of 5 points has been reached.
+
+The start of game overlay shown on different screen sizes using [Am I Responsive](http://ami.responsivedesign.is/)
 ![Responsive start](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/responsive_start.png?raw=true)
+
+The gameboard shown on different screen sizes using [Am I Responsive](http://ami.responsivedesign.is/)
 ![Responsive in game](https://github.com/ShaunWard/Milestone-Project-Two/blob/master/assets/responsive_in_game.png?raw=true)
 
 ## Testing
+
+### Testing using online tools
 
 - [Am I Responsive](http://ami.responsivedesign.is/) was used to test the site on various screen sizes to ensure the information could be viewed correctly
 - [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return some errors, however these errors were used purposefully to make the site work correctly, such as the align attribute being used on some of the divs.
 - [CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS and the errors that came back were either purposefully used, or they were items used by bootstrap.
 - [Pingdom](https://tools.pingdom.com/#5ca554057c800000) used to test the speed of the website and improve loading times. The site came back with a grade of A 93, which is acceptable.
 
+Google Dev tools were used for debugging code at all stages of the building of the project.
+
+### Manual Testing
+
+
+
 ## Issues and Bugs
 
-I originally wanted to use flip boxes for the game, the opponents card flipping over to be revealed to the player would have looked great. When I tried to implement this the flipboxes would work perfectly on the desktop screen, but as soon as I tested the site on a mobile it was clear that they needed some work.
-The problem was that because I was getting to code for the flipbox from W3schools, they had given the boxes a height property to ensure the front and the back of the card were the same height. I could use this property to make sure that the box was big enough to fit all of my info, but then the boxes wouldn't scale with the bootstrap columns that I have used for the layout of the website.
+I originally wanted to use flip boxes for the game, the opponents card flipping over to be revealed to the player would have looked great. When I tried to implement the flipboxes they would work perfectly on the desktop screen, but as soon as I tested the site on a smaller screen such as a mobile, it was clear that they might not be suited for what I needed.
+The problem was because I was getting to code for the flipbox from W3schools, they had given the boxes a height property to ensure the front and the back of the card were the same height. I could use this property to make sure that the box was big enough to fit all of my info, but then the boxes wouldn't scale with the bootstrap columns that I have used for the layout of the website.
 
-During the testing while coding the game, I found that if the player was quick enough they could select more than one option on the card in s single turn. This would result in the score changing faster than 1 point per round. After trying this several times I found that this was something that was possible on occasions where the cards did not load quite as quickly as normal. So the chances of a player doing was was small enough that I didn't code this out of the game, this was down to not finding a straight forward, quick or simple solution.
+During the testing while coding the game, I found that if the player was quick enough they could select more than one option on the card in a single turn. This would result in the score changing faster than 1 point per round. After trying this several times I found that this was something that was possible on occasions where the cards did not load quite as quickly as normal. A possible solution to this could be to disable theother buttons when a button has been clicked by the player. Although I worked on this implementation time became too big a factor for me to finish this before hand in.
 
 ## Scalability
 
-One of the things I would add in future would be to allow the player to change the winning score before the game begins. This could be achieved by having an input box that would take a valve from the player and set it in the code as the winning score. This could also be done with radio button options.
+One of the things I would add in future would be to allow the player to change the winning score before the game begins. This could be achieved by having an input box that would take a valve from the player and set it in the code as the winning score. This could also be done with radio button to give the player a selection of scores for short, medium and longer games, and this would avoid very large numbers being inputted.
 
-Another change I would make to make the game run more smoothly would be to get the data and save it locally using local storage. This way when the game is getting a random NBA player to display on the cards it can quickly get it from local storage rather than an XML request every turn.
+Another change I would make to the game to make the game run more smoothly would be to get all the data and save it locally using local storage. This way when the game is getting a random NBA player to display on the cards it can quickly get it from local storage rather than an XML request every turn.
 
 A timer could be added to the game to keep track of how long the player has taken to beat the computer to 5 points. This could then be used as a mechanism for the player to try and beat themselves next time by beating the computer either by a bigger points margin or a lower time.
 In addition to this a score page or modal could be added where scores are recorded on a high score page. This would be able to take advantage of recording the time taken to win the game and the score when the game was won, this would enable the player to look at the modal and try to beat their own record.
+
+As mentioned in bugs, a feature which disables the other stat buttons when one is selected by the player would be beneficial to the overall playability of the game
 
 ## Technologies
 
