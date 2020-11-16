@@ -94,22 +94,22 @@ img {
     display: flex;
 }
 
-.gameStartText,
-.gameEndText {
+#gameStartText,
+#gameEndText {
     text-align: center;
     color: yellow;
     padding-bottom: 50px;
     max-width: 700px;
 }
 
-.gameStartButton,
-.gameEndButton {
+#gameStartButton,
+#gameEndButton {
     font-size: 5rem;
     padding: 0.1em 0.3em 0.1em 0.3em;
 }
 
-.gameStartButton:hover,
-.gameEndButton:hover {
+#gameStartButton:hover,
+#gameEndButton:hover {
     background-color: black;
     color: white;
 }
