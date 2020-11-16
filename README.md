@@ -2,8 +2,6 @@
 
 ## Description
 
-WORK IN PROGRESS
-
 Higher or Lower is a card game based on a popular physical card game by a different name.
 
 The aim of the game is to pick the statistic on your card that you think will be higher than your opponents. If you pick correctly and your stat is higher you win a point, if the opponents stat is higher they win a point. If the stats are tied we give the benefit to you and award you the point. The first player to score 5 points wins.
@@ -85,7 +83,13 @@ Google Dev tools were used for debugging code at all stages of the building of t
 
 ### Manual Testing
 
+Manual testing has been centered around playing the game but also trying to predict what a player might do.
 
+1. Tried clicking anywhere on the start screen overlay apart from the start button.
+    - Player was able to start game by clicking elsewhere on the screen instead of the start button.
+    - Code was changed to ensure only the start button had the ability to remove the overlay and start the game.
+
+2. 
 
 ## Issues and Bugs
 
