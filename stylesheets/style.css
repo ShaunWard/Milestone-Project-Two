@@ -1,0 +1,125 @@
+/* Page layout styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/basketball_court.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.my-row {
+    height: 99vh;
+}
+
+.my-col {
+    border: 6px solid black;
+    padding: 10px 0px 10px 0px;
+}
+
+.my-img {
+    height: 130px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+/*  */
+
+.my-button {
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: lightgrey;
+}
+
+.nameP {
+    margin: 0;
+}
+
+.player button:hover {
+    background-color: black;
+    color: white;
+}
+
+.computer button.hide{
+    background-color: black;
+    color: black;
+}
+
+.playerSelectedPlayer {
+    background-color: black;
+    color: white;
+}
+
+.playerSelectedComputer {
+    background-color: black;
+    color: white;
+}
+
+#playerCard,
+#computerCard,
+#resetGame,
+.my-button {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#scorePlayer,
+#scoreComputer {
+    color: yellow;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    margin: 20px 0px 20px 0px;
+}
+
+#statOnePlayer,
+#statOneComputer {
+    font-size: large;
+    font-weight: 500;
+}
+
+/* Start and End of game overlay styles */
+
+#gameStart,
+#gameEnd {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameStart.show,
+#gameEnd.show {
+    display: flex;
+}
+
+#gameStartText,
+#gameEndText {
+    text-align: center;
+    color: yellow;
+    padding-bottom: 50px;
+    max-width: 700px;
+}
+
+#gameStartButton,
+#gameEndButton {
+    font-size: 5rem;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+}
+
+#gameStartButton:hover,
+#gameEndButton:hover {
+    background-color: black;
+    color: white;
+}
