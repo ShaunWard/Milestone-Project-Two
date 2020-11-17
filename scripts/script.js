@@ -70,10 +70,12 @@ function getCardData(){
             let data = JSON.parse(this.responseText);
             console.log(data);
 
+            // Select a number at random up to a maximum of 510. This is the number of NBA players available
             function randomNumber(data){
                 return data[Math.floor(Math.random() * 510)];
             }
 
+            // Use random number to get a player from the object
             let randomPlayer = randomNumber(data);
             
             console.log(randomPlayer);
@@ -82,6 +84,7 @@ function getCardData(){
             let playerWeight = `${randomPlayer.Weight}`;
             let playerExperience = `${randomPlayer.Experience}`;
             
+            // Display random NBA player on players card on screen
             document.getElementById('statOnePlayer').innerHTML = `${randomPlayer.DraftKingsName}`;
             document.getElementById('statTwoPlayer').innerHTML = `Height: ${playerHeight} Inches`;
             document.getElementById('statThreePlayer').innerHTML = `Weight: ${playerWeight} Lbs`;
@@ -93,6 +96,7 @@ function getCardData(){
             let computerWeight = `${randomComputer.Weight}`;
             let computerExperience = `${randomComputer.Experience}`;
 
+            // Display random NBA player on computers card on screen
             document.getElementById('statOneComputer').innerHTML = `${randomComputer.DraftKingsName}`;
             document.getElementById('statTwoComputer').innerHTML = `Height: ${computerHeight} Inches`;
             document.getElementById('statThreeComputer').innerHTML = `Weight: ${computerWeight} Lbs`;
@@ -109,12 +113,15 @@ function getCardData(){
 }
 
 function compareStat(statNumber){
+    // Get the value inside the button the player has selected
     let stringPlayer = document.getElementById('stat'+statNumber+'Player').innerHTML;
     let stringComputer = document.getElementById('stat'+statNumber+'Computer').innerHTML;
 
+    // Remove all but numbers from the value and change it from a string to an integer
     let valuePlayer = parseInt(stringPlayer.replace(/[^0-9]/g,''));
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
+    // Compare values from both cards to determine score
     if(valuePlayer >= valueComputer){
         playerCount += 1;
     } else {
