@@ -75,8 +75,9 @@ The gameboard shown on different screen sizes using [Am I Responsive](http://ami
 ### Testing using online tools
 
 - [Am I Responsive](http://ami.responsivedesign.is/) was used to test the site on various screen sizes to ensure the information could be viewed correctly
-- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return some errors, however these errors were used purposefully to make the site work correctly, such as the align attribute being used on some of the divs.
-- [CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS and the errors that came back were either purposefully used, or they were items used by bootstrap.
+- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML. The HTML did return one warning of an empty heading, hoever this is populated by Javascipt at the end of the game.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS and the errors that came back items used by bootstrap.
+- [JS hint](https://jshint.com/) has been used to validate the Javascript returning only messages about the use of template literals.
 - [Pingdom](https://tools.pingdom.com/#5ca554057c800000) used to test the speed of the website and improve loading times. The site came back with a grade of A 93, which is acceptable.
 
 Google Dev tools were used for debugging code at all stages of the building of the project.
