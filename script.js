@@ -26,11 +26,11 @@ function endGame(){
 
 function updateScore(){
     if (playerCount >= 5) {
-        winner = 'Player Wins!'
+        winner = 'Player Wins!';
         endGame();
     }
     if (computerCount >= 5) {
-        winner = 'Opponent Wins!'
+        winner = 'Opponent Wins!';
         endGame();
     }
     document.getElementById('scorePlayer').innerHTML = 'Score: '+playerCount;
@@ -104,7 +104,7 @@ function getCardData(){
             console.log(playerExperience);
         }
         
-    }
+    };
     xhr.send();
 }
 
@@ -116,9 +116,9 @@ function compareStat(statNumber){
     let valueComputer = parseInt(stringComputer.replace(/[^0-9]/g,''));
 
     if(valuePlayer >= valueComputer){
-        playerCount += 1
+        playerCount += 1;
     } else {
-        computerCount += 1
+        computerCount += 1;
     }
     setTimeout(updateScore,1000);
     setTimeout(resetClasses,2000);
