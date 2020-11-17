@@ -131,6 +131,8 @@ Another change I would make to the game to make the game run more smoothly would
 A timer could be added to the game to keep track of how long the player has taken to beat the computer to 5 points. This could then be used as a mechanism for the player to try and beat themselves next time by beating the computer either by a bigger points margin or a lower time.
 In addition to this a score page or modal could be added where scores are recorded on a high score page. This would be able to take advantage of recording the time taken to win the game and the score when the game was won, this would enable the player to look at the modal and try to beat their own record.
 
+As the game can take some time to load when started, in future I would add a loading screen so that the player would not be able to see any empty boxes while loading.
+
 As mentioned in bugs, a feature which disables the other stat buttons when one is selected by the player would be beneficial to the overall playability of the game
 
 ## Technologies
