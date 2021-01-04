@@ -63,7 +63,7 @@ function resetClasses(){
 function getCardData(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=ba30341c670243aaa3d899542494a02a', true);
+    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=', true);
 
     xhr.onload = function(){
         if(this.status == 200){
