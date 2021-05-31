@@ -6,6 +6,7 @@ document.getElementById('statFourPlayer').addEventListener('click', checkCompute
 
 document.getElementById('resetGame').addEventListener('click', endGame);
 
+let secretKey = ${{ secrets.APIKey }};
 var playerCount = 0;
 var computerCount = 0;
 var winner = '';
@@ -63,7 +64,7 @@ function resetClasses(){
 function getCardData(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key=', true);
+    xhr.open('GET', 'https://api.sportsdata.io/v3/nba/scores/json/Players?key='+ secretKey, true);
 
     xhr.onload = function(){
         if(this.status == 200){
